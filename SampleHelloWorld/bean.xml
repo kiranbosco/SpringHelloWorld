@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="personId" class="org.spring.SampleHelloWorld.Person">
+		<constructor-arg value="100"></constructor-arg>
+		<constructor-arg value="kiran"></constructor-arg>
+		<property name="address" ref="address"></property>
+	</bean>
+
+
+
+	<bean id="address" class="org.spring.SampleHelloWorld.Address">
+		<constructor-arg name="street" value="cherch lane"></constructor-arg>
+		<constructor-arg name="pincode" value="524"></constructor-arg>
+	</bean>
+</beans>
